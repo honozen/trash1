@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style2.css">
+    <title>New Trash Cans</title>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+
+    <script type="module" src="trash2.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 class="header-logo">New Trash Cans</h1>
+    </div>
+    <form id="TrashForm">
+        <input type="file" name="photo" id="photo">
+        <label>Location:</label>
+        <input type="text" name="location" id="location">
+        <br>
+        <label>Type:</label>
+        <br>
+        <input type="checkbox" name="burnableGarbage" id="burnableGarbage"> 
+        <label>Burnable Garbage</label>
+        <br>
+        <input type="checkbox" name="nonBurnableGarbage" id="nonBurnableGarbage"> 
+        <label>Non-Burnable Garbage</label>
+        <br>
+        <input type="checkbox" name="recyclable" id="recyclable"> 
+        <label>Recyclable</label>
+        <br>
+        <label>Condition:</label>
+        <input type="text" name="condition" id="condition">
+        <br>
+        <label>Latitude:</label>
+        <input type="text" name="latitude" id="latitude">
+        <br>
+        <label>Longitude:</label>
+        <input type="text" name="longitude" id="longitude">
+        <br>
+        <input type="submit" value="Save" name="save" id="save">
+    </form>
+</body>
+</html>
